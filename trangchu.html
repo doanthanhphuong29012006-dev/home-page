@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giao diện Trang chủ</title>
+    <link rel="stylesheet" href="trangchu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="app_header">
+        <div class="header_left">
+            <div class="logo">
+                <img src="bee.png" alt="Bee Logo" class="logo">
+            </div>
+        </div>
+        
+        <nav class="main_nav">
+            <a href="#" class="header_link">
+                <i class="fa-solid fa-magnifying-glass"></i> SEARCH
+            </a>
+            <a href="#" class="active">
+                <i class="fa-solid fa-chart-simple"></i> TRENDING
+            </a>
+            <a href="#">
+                <i class="fa-regular fa-comment"></i> MY FORUM
+            </a>
+            <a href="#">
+                <i class="fa-regular fa-bell"></i> NOTIFICATION
+            </a>
+            <a href="#" class="profile_link">
+            PROFILE
+            <span class="profile_placeholder"></span>
+        </a>
+        </nav>
+
+    </header>
+
+    <div class="main_layout">
+
+        <aside class="sidebar">
+            <nav class="sidebar_menu">
+                <a href="#" class="active">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Trang chủ</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span>Trending</span>
+                </a>
+            </nav>
+
+            <div class="sidebar_section">
+                <h3>Tags nổi bật</h3>
+                <nav class="sidebar_menu">
+                    <a href="#">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <span>Game</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-basketball"></i>
+                        <span>Thể thao</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>Kinh doanh</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-film"></i>
+                        <span>Phim</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-star"></i>
+                        <span>Nghệ thuật</span>
+                    </a>
+                </nav>
+            </div>
+
+            <div class="sidebar_section">
+                <h3>Tài nguyên</h3>
+                <nav class="sidebar_menu">
+                    <a href="#">
+                        <i class="fa-regular fa-comment"></i>
+                        <span>Forum</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-plus"></i>
+                        <span>Tạo forum</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+
+            <div class="preview_card">
+                <div class="preview_header">
+                    <div class="preview_forum_icon"></div>
+                    <span class="preview_forum_name" id="preview_name_target">Tên forum</span>
+                    <button class="join_button">Tham gia</button>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+
+                <div class="preview_body">
+                    <input type="text" class="preview_text" placeholder="Caption">
+                    <div class="preview_image_placeholder">
+                        <span id="preview_placeholder_text">Image</span>
+                        <img id="preview_image_target" src="" alt="Ảnh xem trước">
+                    </div>
+                </div>
+
+                <div class="preview_footer">
+                    <button class="action_button like_button">Like</button>
+                    <button class="action_button comment_button">Comment</button>
+                    <button class="action_button share_button">Share</button>
+                </div>
+            </div>
+
+    </div>
+    
+    <script src="trangchu.js"></script>
+</body>
+</html>
