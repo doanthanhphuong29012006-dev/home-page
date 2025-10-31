@@ -20,7 +20,7 @@
             <a href="#" class="header_link">
                 <i class="fa-solid fa-magnifying-glass"></i> SEARCH
             </a>
-            <a href="#" class="active">
+            <a href="#">
                 <i class="fa-solid fa-chart-simple"></i> TRENDING
             </a>
             <a href="#">
@@ -103,8 +103,12 @@
                 <div class="preview_body">
                     <input type="text" class="preview_text" placeholder="Caption">
                     <div class="preview_image_placeholder">
-                        <span id="preview_placeholder_text">Image</span>
-                        <img id="preview_image_target" src="" alt="Ảnh xem trước">
+                        <input type="file" id="post_image_upload" accept="image/*" style="display: none;">
+    
+                        <label for="post_image_upload" class="post_image_label">
+                            <span id="post_placeholder_text">Image</span>
+                            <img id="post_uploaded_image" src="" alt="Ảnh tải lên" style="display: none;">
+                        </label>
                     </div>
                 </div>
 
